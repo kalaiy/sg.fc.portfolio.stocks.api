@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ca63180b-d457-4e86-8562-a0ff2745f79a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <AssemblyName>Sg.Fc.Portfolio.Stocks.Api</AssemblyName>
+    <RootNamespace>Sg.Fc.Portfolio.Stocks.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\sg.fc.portfolio.stocks.datasource\sg.fc.portfolio.stocks.datasource.csproj" />
+    <ProjectReference Include="..\sg.fc.alphavantage.sqprovider\sg.fc.alphavantage.sqprovider.csproj" />
+    <ProjectReference Include="..\sg.fc.portfolio.stocks.common\sg.fc.portfolio.stocks.common.csproj" />
+  </ItemGroup>
+
+</Project>

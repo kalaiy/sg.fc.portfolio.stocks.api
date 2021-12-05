@@ -1,0 +1,11 @@
+{
+  "APIEndPoint": {
+    "BaseUrl": "https://www.alphavantage.co/query",
+    "Key": "apikey=VFGRYO4E02JARUQP",
+    "SymbolSearch": "function=SYMBOL_SEARCH&keywords={0}",
+    "Daily": "function=TIME_SERIES_DAILY_ADJUSTED&symbol={0}&outputsize=compact",
+    "Weekly": "",
+    "Monthly": ""
+  }
+
+}
