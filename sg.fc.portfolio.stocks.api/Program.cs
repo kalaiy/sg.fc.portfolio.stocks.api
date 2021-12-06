@@ -2,6 +2,7 @@ using Sg.Fc.Alphavantage.Sqprovider;
 using Sg.Fc.Alphavantage.Sqprovider.Interfaces;
 using Sg.Fc.Alphavantage.Sqprovider.Mapper;
 using Sg.Fc.Portfolio.Stocks.Api.Entity;
+using Sg.Fc.Portfolio.Stocks.Api.Middleware;
 using Sg.Fc.Portfolio.Stocks.Api.Services;
 using Sg.Fc.Portfolio.Stocks.Datasource;
 
@@ -44,6 +45,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.ConfigureCustomExceptionMiddleware();
 
 app.UseHttpsRedirection();
 

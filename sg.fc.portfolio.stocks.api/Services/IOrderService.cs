@@ -6,6 +6,7 @@ namespace Sg.Fc.Portfolio.Stocks.Api.Services
     {
         bool AddOrder(Order order);
         bool DeleteOrder(Guid guid);
+        List<Holdings> GetHoldings();
         List<Order> GetOrders();
     }
 }

@@ -7,5 +7,6 @@ namespace Sg.Fc.Portfolio.Stocks.Datasource
         bool AddOrder(Order order);
         bool DeleteOrder(Guid orderId);
         List<Order> GetOrders();
+        List<TransactionOrder> GetTranscations();
     }
 }
